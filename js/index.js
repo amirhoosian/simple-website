@@ -31,9 +31,9 @@ next.addEventListener('click', e => {
     nextbtn()
     if(auto){
     clearInterval(slideInterval)
-    const slideInterval = setInterval(() => {
+    slideInterval = setInterval(() => {
         nextbtn()
-    }, 5000);
+    }, 7000);
 }
 })
 
@@ -41,14 +41,14 @@ prev.addEventListener('click', e => {
     prevbtn()
     if(auto){
         clearInterval(slideInterval)
-        const slideInterval = setInterval(() => {
+        slideInterval = setInterval(() => {
             nextbtn()
-        }, 5000);
+        }, 7000);
     }
 })
 
 if(auto){
     const slideInterval = setInterval(() => {
         nextbtn()
-    }, 5000);
+    }, 7000);
 }
